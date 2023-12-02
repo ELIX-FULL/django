@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Comment form</h3>
+<form method="POST">
+    {% csrf_token %}
+    <label>Username</label>
+    <input type="text" name="username">
+    <label>Age</label>
+    <input type="text" name="age">
+    <label>Comment</label>
+    <input type="text" name="comment">
+    <button type="submit">Send form</button>
+</form>
+</body>
+</html>
